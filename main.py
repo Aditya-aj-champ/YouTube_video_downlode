@@ -1,11 +1,12 @@
-
+## import You Tub from pytube
 
 from pytube import YouTube
 
-print("\nWelcome To python programe for downolede YouTube videos & Auido ")
+print("\nWelcome To python programme for download YouTube videos & Audio ")
 print("*******************************************************************")
+# plz provide the link from the youtube URL.
 link= input("plz provide link of YouTube :-- ")
-check = input("what do you want to downlode press \npress 1 for videose\npress 2 for Audio\nPlz Enter Your choice :- ")
+check = input("what do you want to download press \npress 1 for videose\npress 2 for Audio\nPlz Enter Your choice :- ")
 print("Plz wait...... \n")
 if check =="1":
     youtube_1 = YouTube(link)
@@ -13,12 +14,12 @@ if check =="1":
 
     for i,v in enumerate(videos):
         print(f"Press {i} for {v}")
-    strm = int(input("Plz provide your index you want to downlode :-- "))
+    strm = int(input("Plz provide your index you want to download :-- "))
 
-    print("Plz wait downlodeing under process...... \n")
+    print("Plz wait downloading under process...... \n")
     videos[strm].download()
     
-    print(" Downlode Successfully")
+    print(" Download Successfully")
 
 if check == "2":
     youtube_1 = YouTube(link)
@@ -27,6 +28,6 @@ if check == "2":
         # print(i,v)
         print(f"Press {i} for {v}")
     strm = int(input("plz tel us the the index "))
-    print("Plz wait downlodeing under processing...... \n")
+    print("Plz wait downloading under processing...... \n")
     aud[strm].download()
-    print(" Downlode Successfully\n\n")
+    print(" Download Successfully\n\n")
